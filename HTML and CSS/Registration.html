@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        h2{
+            text-align:center;
+            color: darkgreen;
+            text-shadow: 3px 4px 4px lightseagreen;
+        }
+        fieldset{
+            margin-left:430px;
+            margin-right:430px;
+            background-color: darkgray;
+            /* color: darkblue; */
+            border-radius: 10px;
+            border-color: darkgreen;
+        }
+        label{
+            color: darkblue;
+        }
+        .option{
+            color: black;
+        }
+        button {  
+            padding: 5px 15px;
+            text-align: center;
+            background-color: darkgreen;
+            color: white;
+            font-size: 12px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>REGISTRATION FORM</h2>
+    <form action="">
+        <fieldset>
+            <legend style="color:darkmagenta">Training Registration Form</legend>
+
+            <label>Full Name</label><br>
+            <input type="text" name="fname" required><br><br>
+
+            <label>email</label><br>
+            <input type="email" name="email" required><br><br>
+
+            <label>Password</label><br>
+            <input type="password" name="password" required><br><br>
+
+            <label>Date of Birth</label><br>
+            <input type="date" required><br><br>
+
+            <label>Gender</label><br>
+            <input type="radio" id="gender" name="gender" value="Female" >Female<br>
+            <input type="radio" id="gender" name="gender" value="Male" >Male<br><br>
+
+            <label>Select Working Mode</label><br>
+            <select name="mode">
+                <option >Work from Home</option>
+                <option >Work from Office</option>
+                <option >Hybrid</option>
+            </select><br><br>
+
+            <label>Select Course</label><br>
+            <input type="checkbox" value="HTML"><label class="option">HTML</label><br>
+            <input type="checkbox" value="CSS"><label class="option">CSS</label><br>
+            <input type="checkbox" value="Angular"><label class="option">Angular</label><br>
+            <input type="checkbox" value="Dot Net"><label class="option">Dot Net</label><br><br>
+    
+            <button>Submit</button>
+            </fieldset>
+    </form> 
+</body>
+</html>

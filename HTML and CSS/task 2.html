@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+        .parent{
+            width:100%;
+        }
+        .header{
+            text-align: center;
+            background-color: darkgray;
+            border:2px solid darkgreen;
+            color:purple;
+            border-radius: 10px;
+        }
+        .left{
+            width: 15%;
+            height:500px;
+            background-color: cadetblue;
+            border:1px solid rgb(31, 13, 237);
+            float:left;
+        }
+        .center{
+            width: 55%;
+            height:500px;
+            background-color: plum;
+            border:1px solid darkblue;
+            float:left;
+            padding: 10px;
+          
+        }
+        .right{
+            width: 30%;
+            height:500px;
+            background-color: rgb(140, 187, 228);
+            border:1px solid rgb(4, 63, 25);
+            float:left;
+            align-items: center;
+        }
+        .footer{
+            background-color:gray;
+            border:2px solid brown; 
+            color:rgb(3, 3, 3);
+            padding: 5px;
+            height: auto;
+            height: 50px;
+        }
+        body{
+            background-color: blanchedalmond;
+        }
+        h3{
+            text-align: center;
+            color: darkred;
+            background-color: azure;
+            padding: 5px;
+            display: inline;
+            margin-left: 80px;
+        }
+        #contact{
+            text-align: center;
+            color: darkgreen;
+            padding: 2px;
+            display: inline;
+            margin-left: 40px;
+            padding-top: 10px;
+            
+        }
+        .navelem{
+            list-style-type: none;
+            margin-top: 20px;
+            padding:10px;
+            height: 100%;
+        }
+        li a.nav{
+            display: block;
+            color:maroon;
+            text-align: left;
+            padding: 5px 5px;
+            font-size: larger;
+        }
+        li a.nav:hover{
+            background-color:azure;
+        }
+       
+        #active{
+            background-color: rgb(192, 78, 78);
+        }
+
+        p::first-letter{
+            color:darkblue;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .transition{
+            width:150px;
+            height:150px;
+            transition: width 3s,height 3s, transform 1s;
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+        .transition:hover{
+            width:200px;
+            height:200px;
+            transform:rotate(180deg);
+        }
+        .button {  
+            padding: 15px 30px;
+            text-align: center;
+            margin: 8px 2px;
+            background-color: darkblue;
+        }
+        #register{
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        @media screen and (max-width:1100px)
+        {
+            iframe{
+                height:130px;
+                width:150px;
+            }
+            li a.nav{
+                display:block;
+                text-align: left;
+                font-size: 18px;
+            }
+            p{
+             font-size: 12px;
+            }
+            .img{
+                display: none;
+            }
+            .transition{
+                height: 80px;
+                width: 80px;
+                margin-left: 50px;
+            }
+            h3{
+                display: none;
+            }
+        }
+        @media screen and (max-width:750px)
+        {
+            iframe{
+                height:80px;
+                width:80px;
+            }
+            li a.nav{
+                display:block;
+                text-align: left;
+                font-size: 8px;
+            }
+            p{
+                font-size: 8px;
+            }
+            .img{
+                display: none;
+            }
+            .contactleft{
+                display: none;
+            }
+            .button{
+                padding: 5px 15px;
+                margin: 4px 2px;
+            }
+            #register{
+                font-size: 8px;
+            }
+            .transition{
+                height: 80px;
+                width: 80px;
+                margin-left: 30px;
+            }
+            
+        }
+        @media screen and (max-width:450px)
+        {
+            iframe{
+                height:50px;
+                width:50px;
+            }
+            li a.nav{
+                display:block;
+                text-align: left;
+                font-size: 4px;
+            }
+            p{
+                font-size: 4px;
+            }
+            img{
+                display: none;
+            }
+            .contactleft{
+                display: none;
+            }
+            .heading{
+                font-size: small;
+            }
+            button{
+                display: none;
+            }
+
+            
+        }
+      
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="header">
+            <button style="float: right; background-color: pink;margin:17px; padding: 8px 10px;">
+                <a href="task 1.html" target="_blank" style=" text-decoration: none;">Info</a></button>
+            <h2 class="heading">STAR ONLINE TRAINING</h2>
+            
+        </div>
+        <div>
+            <div class="left">
+                <ul class="navelem">
+                    <li><a class="nav" id="active">Overview</a></li>
+                    <li><a class="nav">HTML</a></li>
+                    <li><a class="nav">CSS</a></li>
+                    <li><a class="nav">JavaScript</a></li>
+                    <li><a class="nav">Typescript</a></li>
+                    <li><a class="nav">Angular</a></li>
+                    <li><a class="nav">Raect</a></li>
+                    <li><a class="nav">Dot Net</a></li>
+                    <li><a class="nav">Java</a></li>
+                    <li><a class="nav">My SQL</a></li>
+                    <li><a class="nav">C /C++/ C#</a></li>
+                    <li><a class="nav">Aptitude Cocepts</a></li>
+                </ul>
+            </div>
+            <div class="center">
+                <p><img class="img" src="assets/html.png" alt="HTML" height="85px" width="100px" style="float:right; border-radius: 100px; ">
+                 Hypertext Markup Language is a text-based approach to describing how content contained 
+                 within an HTML file is structured. This markup tells a web browser how to display text, 
+                 images and other forms of multimedia on a webpage 
+                 It can be assisted by technologies such as Cascading Style Sheets and scripting 
+                 languages such as JavaScript. 
+                </p><hr>
+
+                <p><img class="img" src="assets/css.png" alt="CSS" height="85px" width="100px" style="float:left; padding-right: 5px; border-radius: 100px;">
+                CSS stands for Cascading Style Sheets, and it's used to add style to a web page by
+                 dictating how a site is displayed on a browser. CSS is unique in that it doesn't 
+                 create any new elements, like HTML or JavaScript. Instead, it's a language used to 
+                 style HTML elements.
+                </p><hr>
+                <p><img class="img" src="assets/Angular.png" alt="Angular" height="85px" width="100px" style="float:right; border-radius: 100px;">
+                    Angular is a TypeScript-based free and open-source web application framework led by 
+                    the Angular Team at Google and by a community of individuals and corporations. 
+                    Angular is a complete rewrite from the same team that built AngularJS.
+                    AngularJS used for creating large single-page applications
+                </p><hr>
+                <p><img class="img" src="assets/dotnet.png" alt="dotnet" height="85px" width="100px" style="float:left; padding-right: 5px; border-radius: 100px;">
+                    .NET is a free and open-source, managed computer software framework for Windows, 
+                    Linux, and macOS operating systems. It is a cross-platform successor to .NET 
+                    Framework. The project is primarily developed by Microsoft employees by way of the
+                     .NET Foundation
+                </p>
+            </div>
+            <div class="right">
+                <br>
+                <h3> Additional Information</h3><br><br>
+
+                <iframe width="300" height="180" style="margin-left:35px;margin-top:15px; " src="https://www.youtube.com/embed/MQNftckauXg">
+                </iframe><br><br>
+
+                
+                <img class="transition" alt="starlogo"  src="assets/star.png">
+
+                
+            </div>
+        </div>
+        
+        <div class="footer">
+            <small style="float:right; margin-top: 20px; margin-right: 20px; color:darkblue"><b>&copy; www.startraining.com</b></small>
+
+
+            <div class="contactleft"style="float: left;">
+                <h4 id="contact">Contact Us At</h4>
+                <ul type="circle">
+                    <li>startech@gmail.com</li>
+                    <li>9903488933</li>
+                 </ul>
+            </div>
+            
+            <div style="text-align: center;" >
+                <button class="button"><a href="Registration.html" target="_blank" id="register">Register</a></button>
+                
+            </div>
+        </div>
+
+    </div>    
+</body>
+</html>
