@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3</title>
+  </head>
+  <body>
+    <script>
+      var num = 6;
+      document.write("Program 1: Even or odd <br><br>");
+      if (num % 2 == 0) {
+        document.write(num + " is an Even Number");
+      } else {
+        document.write(num + " is an Odd Number");
+      }
+    </script>
+    <hr />
+
+    <script>
+      var a = 5;
+      var b = 9;
+      var c;
+      document.write("Program 2: Swap Numbers <br><br>");
+      document.write("1. With third variable <br>");
+      document.write("Before Swapping <br> a= " + a + " and b= " + b + "<br>");
+      c = a;
+      a = b;
+      b = c;
+      document.write(
+        "After Swapping <br> a= " + a + " and b= " + b + "<br><br>"
+      );
+    </script>
+    <script>
+      var x = 10;
+      var y = 20;
+      document.write("2. Without third variable <br>");
+      document.write("Before Swapping <br> x= " + x + " and y= " + y + "<br>");
+      x = x + y;
+      y = x - y;
+      x = x - y;
+      document.write(
+        "After Swapping <br> x= " + x + " and y= " + y + "<br><br>"
+      );
+    </script>
+    <script>
+      var p = 2;
+      var q = 4;
+      document.write("3. Using expression <br>");
+      document.write("Before Swapping <br> p= " + p + " and q= " + q + "<br>");
+      [p, q] = [q, p];
+      document.write(
+        "After Swapping <br> p= " + p + " and q= " + q + "<br><br>"
+      );
+    </script>
+    <hr />
+
+    <script>
+      var total = 0;
+      var percentage = 0;
+      document.write("Program 3: Find Total, percentage and grade <br><br>");
+      var a = parseInt(prompt("Enter marks of subject 1"));
+      var b = parseInt(prompt("Enter marks of subject 2"));
+      var c = parseInt(prompt("Enter marks of subject 3"));
+      var d = parseInt(prompt("Enter marks of subject 4"));
+      var e = parseInt(prompt("Enter marks of subject 5"));
+      total = a + b + c + d + e;
+      percentage = (total / 500) * 100;
+      document.write("Total Marks: " + total + "<br>");
+      document.write("Percentage: " + percentage + "<br>");
+      if (percentage > 80) {
+        document.write("Grade is A");
+      } else if (percentage > 60 && percentage <= 80) {
+        document.write("Grade is B");
+      } else if (percentage > 45 && percentage <= 60) {
+        document.write("Grade is C");
+      } 
+      else {
+        document.write("Grade is Fail");
+      }
+    </script>
+    <hr />
+
+    <script>
+      var n = 456;
+      var r,
+        rev = 0,
+        sum = 0;
+      document.write("Program 4: Reverse the number and find sum <br><br>");
+      document.write("The number is: " + n + "<br>");
+      while (n != 0) {
+        r = n % 10;
+        sum = sum + r;
+        rev = rev * 10 + r;
+        n = parseInt(n / 10);
+      }
+      document.write("Reverse of the number: " + rev + "<br>");
+      document.write("Sum of the number: " + sum + "<br>");
+    </script>
+
+    <hr />
+    <script>
+      document.write("Program 5: Factorial of a number <br><br>");
+      var n = 5;
+      function factorial(n) {
+        if (n == 0 || n == 1) {
+          return 1;
+        } else {
+          return factorial(n - 1) * n;
+        }
+      }
+      document.write("Factirial of " + n + " is " + factorial(n));
+    </script>
+  </body>
+</html>
