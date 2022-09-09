@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mathematical and Date function</title>
+</head>
+<body>
+  <!-- round -->
+  <script>
+    x=Math.round(4.6);
+    document.write("round: "+x)
+    y=Math.round(6.3);
+    document.write("<br> round: "+y)
+  </script><hr>
+
+  <!-- Floor and ceil -->
+  <script>
+    x=Math.ceil(7.2);
+    document.write("ceil: "+x)
+    y=Math.floor(4.9);
+    document.write("<br> floor: "+y)
+  </script><hr>
+
+  <!-- trunc and abs-->
+  <script>
+    x=Math.trunc(10.6);
+    document.write("trunc: "+x)
+    y=Math.abs(-4.7);
+    document.write("<br> abs: "+y)
+  </script><hr>
+
+  <!-- pow and sqrt-->
+  <script>
+    x=Math.sqrt(64);
+    document.write("sqrt: "+x)
+    y=Math.pow(4,3);
+    document.write("<br> pow: "+y)
+  </script><hr>
+
+  <!-- min and max-->
+  <script>
+    x=Math.min(0, 150, 30, 20, -8, -200);;
+    document.write("min: "+x)
+    y=Math.max(0, 150, 30, 20, -8, -200);;
+    document.write("<br> max: "+y)
+  </script><hr>
+
+  <!-- random and log-->
+  <script>
+    x=Math.random();;
+    document.write("random: "+x)
+    y=Math.log(1);;
+    document.write("<br> log: "+y)
+  </script><hr>
+
+  <!-- date -->
+  <script>
+    d = new Date();
+    document.write("Date: "+d);
+    d = new Date(2018, 11, 24, 10, 33, 30, 0);
+    document.write("<br>Date: "+d);
+    d = new Date(2018, 15, 24, 10, 33, 30);
+    document.write("<br>Date: "+d);
+    d = new Date(2018, 11, 24);
+    document.write("<br>Date: "+d);
+  </script>
+
+
+  
+</body>
+</html>
