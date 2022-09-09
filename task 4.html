@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+    .form {
+        border: darkblue 2px solid;
+        background-color: rgb(61, 113, 158);
+        padding-left: 20px;
+        height: 300px;
+        width: 20%;
+        margin-left: 20%;
+        margin-top: 5%;
+        float: left;
+    }
+
+    .formMsg {
+        font-size: 17px;
+        color:rgb(88, 17, 73);
+    }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h2 style="color: maroon; text-align:center">Login Page </h2>
+        <form>
+            <label>Enter User Name</label><br>
+            <input type="text" name="username" placeholder="User Name"required><br><br><br>
+            <label>Enter Password</label><br>
+            <input type="password" name="password" placeholder="Password" required><br><br><br>
+            
+            <input type="button" value="Submit" onclick="processData(this.form)">
+        </form>
+        <div class="formMsg">
+            <p id="status"> </p>
+        </div>
+    </div>
+
+    <script>
+        class Login {
+            display() {
+                return "Please Enter the Credentials! ";
+            }
+        }
+        
+        class Success extends Login {
+            
+            display() {
+                return "Login Successful";
+            }
+        }
+      
+        class Fail extends Login {
+           
+            display() {
+                return " Login Failed ";
+            }
+        }
+
+        function processData(form) 
+        { 
+            const ExistingUser="Ashitha123" ; 
+            const ExistingPassword="abc@123" ; 
+            var username = form.username.value;
+            var password = form.password.value;
+            var v;
+            
+            if(username=="" || password==""){
+                v = new Login();
+            }
+            else if (ExistingUser==username && ExistingPassword==password) {
+                v = new Success();
+            }
+            else if (ExistingUser!=username || ExistingPassword!=password) {
+                
+                v = new Fail();
+            } 
+            msg = v.display();
+            document.getElementById("status").innerHTML = msg;
+        }
+    </script>
+
+<!-- ... --><!-- ... --><!-- ... --><!-- ... --><!-- ... --><!-- ... --><!-- ... --><!-- ... -->
+<div class="form">
+    <h2 style="color: maroon; text-align:center">Calculate Bonus </h2>
+    <form>
+        <label>Enter your Salary</label><br>
+        <input type="number" name="salary" placeholder="Salary" required><br><br>
+
+        <label>Select Department</label><br>
+        <input type="radio" id="it" name="dept" value="IT">
+        <label for="it"> IT</label> <br>
+        <input type="radio" id="testing" name="dept" value="Testing">
+        <label for="testing"> Testing </label> <br>
+        <input type="radio" id="Admin" name="dept" value="Admin">
+        <label for="Admin"> Admin</label> <br>
+        <input type="radio" id="Other" name="dept" value="Other">
+        <label for="Other"> Other </label> <br><br>  
+        <input type="button" value="Check Bonus" onclick="processBonus(this.form)">
+    </form>
+    <br>
+    <div class="formMsg">
+        <span>Total Salary:</span>
+        <b id="bonus"></b>
+    </div>
+</div>
+
+<script>
+
+    function processBonus(form) 
+    { 
+        var salary = parseInt(form.salary.value);
+        var department = form.dept.value;
+        var bonus;
+        
+        if(department=="IT"){
+            bonus=salary+((salary*50)/100);
+        }
+        else if (department=="Testing") {
+            bonus=salary+((salary*45)/100);
+        }
+        else if (department=="Admin") {
+            
+            bonus=salary+((salary*30)/100);
+        } 
+        else{
+            bonus=salary+((salary*20)/100);
+        }
+        document.getElementById("bonus").innerHTML = bonus;
+    }
+</script>
+
+    
+
+</body>
+</html>
