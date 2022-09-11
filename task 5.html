@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap-Task 5</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://kit.fontawesome.com/bddeb2fe76.js" crossorigin="anonymous"></script>
+
+
+    <style>
+      .carouselimg {
+        height: 300px;
+      }
+      .caption {
+        text-align: center;
+      }
+      .captionPara {
+        color: darkgreen;
+      }
+      .card_img {
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 150px;
+        margin-left: 50px;
+      }
+      .left {
+        width: 40%;
+        height: 250px;
+        border: 1px solid black;
+        float: left;
+        margin-left: 5%;
+        background-color: azure;
+      }
+
+      .right {
+        width: 45%;
+        height: 250px;
+        float: left;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      .navpara{
+        margin:15px;
+        text-align: justify;
+        color: brown;
+      }
+      .navheading{
+        margin-left: 15px;
+        color: darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <i class="fa fa-star-o" style="font-size: 24px; color: orangered"> </i
+        ><span>a</span>
+        <a class="navbar-brand" href="#" style="color: orangered">Trainings</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-fw fa-search"></i>Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-file-text-o"></i>About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-fw fa-user"></i>Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="assets/img4.jfif"
+            class="d-block w-100 carouselimg"
+            alt="starTraining"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Star Trainings</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/img 3.jfif"
+            class="d-block w-100 carouselimg"
+            alt="learnToCode"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Learn to code</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/img1.jfif"
+            class="d-block w-100 carouselimg"
+            alt="Coding"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Be creative with coding</h5>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br />
+    <!-- caption -->
+    <div class="caption">
+      <b style="color: crimson">Star Online Trainings</b><br />
+      <p class="captionPara">
+        Let us take you into a deeper experience, make a moment a lasting
+        conveyable memory. Let us help build your tribe.
+      </p>
+    </div>
+
+    <!--ALERT-->
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+      <strong>Free Courses Available!!!</strong> Check it out
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <!-- cards -->
+    <div class="container">
+      <div class="row">
+        <div class="col col-3 col-sm-6 col-md-3">
+          <div class="card mr-3" style="border: 2px solid orangered">
+            <img
+              class="card_img"
+              src="assets/html.png"
+              class="card-img-top"
+              alt="htnl"
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center">HTML</h5>
+              <p class="card-text" style="text-align: center">
+                The HyperText Markup Language is designed to be displayed in a
+                web browser.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-3 col-sm-6 col-md-3">
+          <div class="card mr-3" style="border: 2px solid cornflowerblue">
+            <img
+              class="card_img"
+              src="assets/css.png"
+              class="card-img-top"
+              alt="CSS"
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center">CSS</h5>
+              <p class="card-text" style="text-align: center">
+                Cascading Style Sheets is a style sheet language used for the
+                presentation and styling.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-3 col-sm-6 col-md-3">
+          <div class="card mr-3" style="border: 2px solid green">
+            <img
+              class="card_img"
+              src="assets/dotnet.jfif"
+              class="card-img-top"
+              alt="DOTNET"
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center">DOTNET</h5>
+              <p class="card-text" style="text-align: center">
+                Dotnet is a framework that provides a programming guidelines for
+                the applications.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-3 col-sm-6 col-md-3">
+          <div class="card mr-3" style="border: 2px solid brown">
+            <img
+              class="card_img"
+              src="assets/Angular.png"
+              class="card-img-top"
+              alt="Angular"
+            />
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center">ANGULAR</h5>
+              <p class="card-text" style="text-align: center">
+                Angular is a platform and framework for building single-page
+                client applications
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+
+    <!-- TABLE AND NAVTAB -->
+    <div>
+      <div class="left">
+        <!--Nav Tab-->
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#Certificates" type="button" role="tab"
+        aria-controls="home" aria-selected="true"><i class="fa-sharp fa-solid fa-award"></i>Certificatess</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#Scholarship" type="button" role="tab"
+        aria-controls="profile" aria-selected="false"><i class="fa-solid fa-indian-rupee-sign"></i>Scholarships</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#Placements" type="button" role="tab"
+        aria-controls="contact" aria-selected="false"><i class="fa-regular fa-building"></i>Placements</button>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="Certificates" role="tabpanel" aria-labelledby="home-tab">
+      <p class="navpara">In a world where competition for jobs, pay increases, and academic success, 
+         certifications offer hope because they are a credible, third-party assessment of ones 
+         skill and knowledge for a given subject.<br> 
+        <h5 class="navheading"> key benefits of STAR certification</h5>
+        <ul>
+          <li>Validation of knowledge</li>
+          <li>Improved reputation</li>
+          <li>Increased confidence </li>
+        </ul>
+      </p>
+    </div>
+    <div class="tab-pane fade" id="Scholarship" role="tabpanel" aria-labelledby="profile-tab">
+      <p class="navpara">Every year Star Trainings will provide various Scholarship offers to the users of the websites 
+        based on the various parameters<br>
+        <h4  class="navheading">Eligibility Criteria</h4>
+        <ul>
+          <li>Should score 80% above in the assessment</li>
+          <li>Should be a member of star trainings atleast for a year</li>
+          <li>Candidate should invite their friends to star training courses </li>
+        </ul></p>
+    </div>
+    <div class="tab-pane fade" id="Placements" role="tabpanel" aria-labelledby="contact-tab">
+      <p class="navpara">Star Trainings will provides lot of placement opportunities to the candidates based on their performance in the 
+        Assignment <br>
+        <h4  class="navheading">Placement offers Available</h4>
+        <ul>
+          <li>Microsoft</li>
+          <li>TCS</li>
+          <li>Infosys </li>
+        </ul>
+      </p>
+    </div>
+  </div>
+      </div>
+
+      <div class="right">
+        <!-- Responsive table -->
+        <h3
+          style="
+            text-align: center;
+            color: darkblue;
+            background-color: rgb(181, 93, 93);
+          ">
+          Fee Details
+        </h3>
+        <table
+          class="table table-hover table-striped table-bordered"
+          style="text-align: center">
+          <thead style="color: darkred">
+            <tr>
+              <th>Course Name</th>
+              <th>Course Fee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>2000</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>2500</td>
+            </tr>
+            <tr>
+              <td>DOTNET</td>
+              <td>5000</td>
+            </tr>
+            <tr>
+              <td>ANGULAR</td>
+              <td>3500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+     
+
+
+    <br /><br />
+  </body>
+</html>
