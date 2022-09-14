@@ -9,6 +9,7 @@ import { ProductsComponent } from './products/products.component';
 import { FormsModule } from '@angular/forms';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { ItemComponent } from './item/item.component';
+import { WishlistComponent } from './wishlist/wishlist.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ItemComponent } from './item/item.component';
     ProductsComponent,
     FeedbackComponent,
     ItemComponent,
+    WishlistComponent,
   ],
   imports: [
     BrowserModule,
