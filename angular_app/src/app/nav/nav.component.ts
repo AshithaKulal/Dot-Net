@@ -11,6 +11,8 @@ export class NavComponent implements OnInit {
 
   title="Flipkart"
 
+  public logo="../assets/flipkart.jfif";
+
   ngOnInit(): void {
   }
 
