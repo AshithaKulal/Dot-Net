@@ -2,10 +2,10 @@
 <div class="container">
     <div class="row">
         <div class="col col-sm-6 col-md-4" *ngFor="let product of productdetails" [ngSwitch]="product.Status">
-            <div class="card mt-3 mb-3" style="border: 1.5px solid darkslategrey;">
+            <div class="card mt-3 mb-3" style="border: 1.5px solid purple;">
                     <img  [src]="product.image" class="card-img-top" alt="product"/>
                     <div class="card-body" *ngSwitchCase="'In Stock'" >
-                        <h5>{{product.pid}}: {{product.pname}} </h5>
+                        <h5>{{product.pid}}: {{product.pname| uppercase}} </h5>
                         <p [style.color]="'darkblue'" [style.font-size.px]="'15'" [style.background-color]="'lightpink'">
                             {{product.pdescription}}
                         </p>
@@ -14,8 +14,8 @@
                         </div>
                     </div>
                     <div class="card-body" *ngSwitchDefault>
-                        <h5>{{product.pid}}: {{product.pname}}</h5>
-                        <p [style.color]="'darkblue'" [style.font-size.px]="'15'" [style.background-color]="'pink'">
+                        <h5>{{product.pid}}: {{product.pname| uppercase}}</h5>
+                        <p [style.color]="'darkblue'" [style.font-size.px]="'15'" [style.background-color]="'lightpink'">
                             {{product.pdescription}}
                         </p>
                         <div class="text-danger" style="text-align: center;">
