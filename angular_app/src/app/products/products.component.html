@@ -10,7 +10,7 @@
                             {{product.pdescription}}
                         </p>
                         <div class="text-success" style="text-align: center;">
-                            <b>{{product.Status}}</b>
+                            <button type="button" class="btn btn-success">{{product.Status}}</button>
                         </div>
                     </div>
                     <div class="card-body" *ngSwitchDefault>
@@ -18,8 +18,8 @@
                         <p [style.color]="'darkblue'" [style.font-size.px]="'15'" [style.background-color]="'lightpink'">
                             {{product.pdescription}}
                         </p>
-                        <div class="text-danger" style="text-align: center;">
-                           <b> {{product.Status}}</b>
+                        <div style="text-align: center;">
+                            <button type="button" class="btn btn-danger">{{product.Status}}</button>
                         </div>
                     </div>
             </div>
