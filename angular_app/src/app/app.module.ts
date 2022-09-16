@@ -10,6 +10,10 @@ import { FormsModule } from '@angular/forms';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { ItemComponent } from './item/item.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
+import { DressComponent } from './dress/dress.component';
+import { DressdetailsComponent } from './dress/dressdetails/dressdetails.component';
+import { AdvertisementComponent } from './advertisement/advertisement.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +24,10 @@ import { WishlistComponent } from './wishlist/wishlist.component';
     FeedbackComponent,
     ItemComponent,
     WishlistComponent,
+    DressComponent,
+    DressdetailsComponent,
+    AdvertisementComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
