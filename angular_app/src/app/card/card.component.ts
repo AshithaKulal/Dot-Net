@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import * as prod from "../data/products.json";
+import { Component, OnInit,Input } from '@angular/core';
+
+
 @Component({
   selector: 'app-card',
   templateUrl: './card.component.html',
@@ -8,10 +9,10 @@ import * as prod from "../data/products.json";
 export class CardComponent implements OnInit {
 
   constructor() { }
+  @Input()product:any
 
-  product:any=(prod as any).default;
 
-  productDetail=false;
+  productDetail=true;
 
   showproductToggle()
   {
@@ -21,10 +22,10 @@ export class CardComponent implements OnInit {
   toggleContent(){
     var content='';
     if(this.productDetail){
-      content='fa-solid fa-arrow-up';
+      content='fa-solid fa-arrow-down';
     }
     else{
-      content='fa-solid fa-arrow-down';
+      content='fa-solid fa-arrow-up';
     }
     return content;
   }

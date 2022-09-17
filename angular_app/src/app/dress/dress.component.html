@@ -4,7 +4,7 @@
     <div class="row">
         <!--1st column-->
         <div class="col col-lg-3">
-            <app-card></app-card>
+            <app-card [product]="productItem" *ngFor="let productItem of p"></app-card>
         </div>
 
         <!--2nd column-->

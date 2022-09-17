@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as prod from "../data/products.json";
 
 @Component({
   selector: 'app-dress',
@@ -8,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class DressComponent implements OnInit {
 
   constructor() { }
+
+  p:any=(prod as any).default;
 
   ngOnInit(): void {
   }
