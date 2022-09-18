@@ -5,18 +5,25 @@
             <div class="card-body col-lg-12">
                 <div class="row" style="margin-top:5px; background-color:rgb(98, 141, 143); border-style:solid;border-color:darkgreen;border-radius:10px;">
                     <div class="col-lg-3">
-                        <!--Property Binding-->
+                        
                         <img [src]="d.img">
+                        <app-counter></app-counter>
                     </div>
                     <div class="col-lg-9" style="margin-top:20px;">
                         <!--Interpolation Binding-->
-                           <b style="color: crimson;"> {{d.pid}}: {{d.pname | uppercase}}</b><br>
+                           <b style="color: crimson;"> {{d.pid}}: {{d.pname | uppercase}}</b>
+                          
             
                           <h6 style="color:darkmagenta;">  {{d.price | currency:'INR'}} </h6>
                       
                         <hr>
-                            <span style="color:darkblue">Description: {{d.pdescription}}</span>
-                            <br><br>
+                            <span style="color:darkblue">Description: {{d.pdescription}}</span><br>
+                           
+                            
+                            <button class="btn btn-success" style="margin-top: 10px;margin-left: 100px;" >
+                               Buy Now
+                            </button>
+                           
               
                     </div>
                 </div>

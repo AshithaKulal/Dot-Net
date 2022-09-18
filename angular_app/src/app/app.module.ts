@@ -14,6 +14,10 @@ import { DressComponent } from './dress/dress.component';
 import { DressdetailsComponent } from './dress/dressdetails/dressdetails.component';
 import { AdvertisementComponent } from './advertisement/advertisement.component';
 import { CardComponent } from './card/card.component';
+import { MobileComponent } from './mobile/mobile.component';
+import { MobiledisplayComponent } from './mobile/mobiledisplay/mobiledisplay.component';
+import { CounterComponent } from './counter/counter.component';
+import { CounterchildComponent } from './counter/counterchild/counterchild.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +32,10 @@ import { CardComponent } from './card/card.component';
     DressdetailsComponent,
     AdvertisementComponent,
     CardComponent,
+    MobileComponent,
+    MobiledisplayComponent,
+    CounterComponent,
+    CounterchildComponent,
   ],
   imports: [
     BrowserModule,

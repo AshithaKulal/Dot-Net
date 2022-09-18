@@ -22,7 +22,7 @@
     },
     {
         "pid":4,
-        "pname":"Redme",
+        "pname":"Redmi",
         "pdescription":"Redmi Note 11T 5G (8GB RAM, 128GB, Matte Black) Battery: 5000 mAh",
         "price":27890,
         "img":"https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1662445519/Croma%20Assets/Communication/Mobiles/Images/246254_di4wqh.png/mxw_2048,f_auto"
@@ -30,9 +30,9 @@
     {
         "pid":5,
         "pname":"Infinix",
-        "pdescription":"6 GB RAM | 64 GB ROM | Expandable Upto 2 TB 17.02 cm (6.7 inch) Full HD+ AMOLED Display",
+        "pdescription":"6 GB RAM | 64 GB ROM | Expandable Upto 2 TB 17.02 cm (6.7 inch) ",
         "price":15000,
-        "img":"https://www.google.com/aclk?sa=l&ai=DChcSEwi84sXFppj6AhV_g0sFHXweDE4YABADGgJzZg&ae=2&sig=AOD64_3fKH_DuFl4cuKqNqOX2eCTZ3VYKQ&adurl&ctype=5&ved=2ahUKEwiSlLnFppj6AhXVKbcAHTXVD9sQvhd6BAgBEHA"
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfseuZNUcC7QVCFcElGCodNlrHXsBB-vScTw&usqp=CAU"
     },
     {
         "pid":6,

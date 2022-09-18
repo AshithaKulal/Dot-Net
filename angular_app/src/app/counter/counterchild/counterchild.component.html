@@ -1,0 +1,11 @@
+<div style="margin-top:5px; margin-bottom: 5px;">
+    <div>
+        <button class="btn btn-secondary" [disabled]="!countLessThenOne" (click)="decrement();">
+            <i class="fa-solid fa-minus"></i>
+        </button>
+        <input type="button" class="btn btn-light" [value]="counterValue" style="color: darkblue;">
+        <button class="btn btn-secondary" (click)="increment();">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+    </div>
+</div>

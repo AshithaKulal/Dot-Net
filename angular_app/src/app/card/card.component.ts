@@ -1,5 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-card',
@@ -8,7 +8,7 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router,) { }
   @Input()product:any
 
 
@@ -28,6 +28,10 @@ export class CardComponent implements OnInit {
       content='fa-solid fa-arrow-up';
     }
     return content;
+  }
+
+  onclick(){
+    this.router.navigate(['/products'])  
   }
 
   ngOnInit(): void {
