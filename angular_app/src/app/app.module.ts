@@ -18,6 +18,11 @@ import { MobileComponent } from './mobile/mobile.component';
 import { MobiledisplayComponent } from './mobile/mobiledisplay/mobiledisplay.component';
 import { CounterComponent } from './counter/counter.component';
 import { CounterchildComponent } from './counter/counterchild/counterchild.component';
+import { AppliancesComponent } from './appliances/appliances.component';
+import { ContactComponent } from './contact/contact.component';
+import { SuggestionComponent } from './suggestion/suggestion.component';
+
+
 
 @NgModule({
   declarations: [
@@ -36,6 +41,10 @@ import { CounterchildComponent } from './counter/counterchild/counterchild.compo
     MobiledisplayComponent,
     CounterComponent,
     CounterchildComponent,
+    AppliancesComponent,
+    ContactComponent,
+    SuggestionComponent,
+
   ],
   imports: [
     BrowserModule,

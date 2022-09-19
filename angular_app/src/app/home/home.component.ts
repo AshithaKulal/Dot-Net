@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as prod from "../data/products.json";
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { }
-
+  p:any=(prod as any).default;
 
   ngOnInit(): void {
   }

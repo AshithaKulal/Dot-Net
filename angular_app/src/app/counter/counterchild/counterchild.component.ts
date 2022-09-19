@@ -14,6 +14,7 @@ export class CounterchildComponent implements OnInit {
 
   counterValue=1;
   countLessThenOne=true;
+  countGreaterTen=false;
   
   @Output() countEmmitter =new EventEmitter(); 
 
@@ -30,13 +31,20 @@ export class CounterchildComponent implements OnInit {
     else{
       this.countLessThenOne=true;
       this.counterValue--;
+      this.countGreaterTen=true;
     }
     this.PostValue();
   }
 
   increment(){
-    this.counterValue++;
-    this.countLessThenOne=true;
+    if(this.counterValue==10){
+      this.countGreaterTen=false;
+
+    }
+    else{
+      this.counterValue++;
+      this.countLessThenOne=true;
+    }
     this.PostValue();
   }
 
