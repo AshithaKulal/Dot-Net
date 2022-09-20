@@ -1,3 +1,17 @@
 .carouselimg {
     height: 300px;
   }
+  .flipkart{
+    float:right;
+   
+    height:80px;
+    width:100px;
+    border-radius: 30px;
+
+  }
+  .message{
+    margin:20px 50px;
+    background-color:honeydew;
+    padding:10px;
+    color: brown;
+  }
