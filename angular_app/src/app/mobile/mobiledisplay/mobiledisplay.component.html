@@ -6,13 +6,16 @@
                     <img  [src]="mbl.img" class="card-img-top" alt="product"/>
                     <div class="card-body" >
                         <h5>{{mbl.pid}}: {{mbl.pname| uppercase}} </h5>
-                        <app-counter></app-counter>
-                       
-                            {{mbl.pdescription}}
-                            
-          
-                        
-                    </div>
+                        <div class="row">
+                            <div class="col col-md-7">
+                                <app-counterchild (countEmmitter)="receiveValue($event)"></app-counterchild>
+                            </div>   
+                            <div class="col col-md-2">
+                                <button class="btn btn-outline-success m-2" (click)="addToCart(mbl)" style="width:50px;border-radius:10px;"><i class="fa-sharp fa-solid fa-cart-plus"style="font-size: 20px;"></i></button> 
+                            </div>
+                        </div>
+                            {{mbl.pdescription}}   
+                        </div>
                     
             </div>
         </div>

@@ -7,24 +7,29 @@
                     <div class="col-lg-3">
                         
                         <img [src]="d.img">
-                        <!-- <app-counter></app-counter> -->
                     </div>
-                    <div class="col-lg-9" style="margin-top:20px;">
+                    <div class="col-lg-9" style="margin-top:10px;">
                         <!--Interpolation Binding-->
                            <b style="color: crimson;"> {{d.pid}}: {{d.pname | uppercase}}</b>
-                          
-            
+                    
                           <h6 style="color:darkmagenta;">  {{d.price | currency:'INR'}} </h6>
                       
                         <hr>
                             <span style="color:darkblue">Description: {{d.pdescription}}</span><br>
+                        
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <app-counterchild (countEmmitter)="receiveValue($event)"></app-counterchild>
+                                </div>   
+                                <div class="col-lg-4">
+                                <button class="btn btn-dark m-2" (click)="addToCart(d)" style="width:120px;border-radius:10px;">Add to Cart</button> 
+                                   
+                                </div>
+                            </div>
+                          
+
                            
-                            
-                           <input type="number" name="quantity" [(ngModel)]="quantity" style="width:50px;border-radius:10px;" min="1" max="25">
                            
-                            <button class="btn btn-dark m-2" (click)="addToCart(d)" style="width:120px;border-radius:10px;">Add to Cart</button>
-                           
-              
                     </div>
                 </div>
         </div>

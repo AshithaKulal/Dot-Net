@@ -12,6 +12,13 @@ import { Cartitem } from 'src/app/cartitem';
 export class DressdetailsComponent implements OnInit {
 
   constructor( private cartsvc:CartService) { }
+
+  count:number=1;
+
+  receiveValue($event:number){
+    this.count=$event;
+  }
+
   cart:Cartitem={
     pid:0,
     pname:'',
@@ -21,7 +28,7 @@ export class DressdetailsComponent implements OnInit {
     quantity:1,
     totalPrice:1    
   }
-  quantity:number=1;
+  // quantity:number=1;
 
   addToCart(product:any){
     this.cart.pname=product.pname;
@@ -30,7 +37,7 @@ export class DressdetailsComponent implements OnInit {
     this.cart.img=product.img;
     this.cart.price=product.price;
     this.cart.totalPrice=product.totalPrice;
-    this.cart.quantity=this.quantity;
+    this.cart.quantity=this.count;
     this.cart.pid=product.id;
     this.cartsvc.addToCart(this.cart);
     console.log(product.id);

@@ -32,7 +32,12 @@ export class AppliancesComponent implements OnInit {
     quantity:1,
     totalPrice:1    
   }
-  quantity:number=1;
+  // quantity:number=1;
+  count:number=1;
+
+  receiveValue($event:number){
+    this.count=$event;
+  }
 
   addToCart(product:any){
     this.cart.pname=product.pname;
@@ -41,7 +46,7 @@ export class AppliancesComponent implements OnInit {
     this.cart.img=product.img;
     this.cart.price=product.price;
     this.cart.totalPrice=product.totalPrice;
-    this.cart.quantity=this.quantity;
+    this.cart.quantity=this.count;
     this.cart.pid=product.id;
     this.cartsvc.addToCart(this.cart);
     console.log(product.id);

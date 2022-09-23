@@ -25,7 +25,7 @@ export class RegistrationComponent implements OnInit {
 
   ngOnInit(): void {
     this.registerForm = this.formBuilder.group({
-      username: ['', [Validators.required, Validators.pattern('[A-Za-z]*'), Validators.minLength(6), Validators.maxLength(16)]],
+      username: ['', [Validators.required, Validators.pattern('[A-Za-z]*'), Validators.minLength(5), Validators.maxLength(16)]],
       useremail: ['', [Validators.required]],
       mobile: ['', [Validators.required, Validators.pattern('[0-9]*')]],
       password: ['', [Validators.required, Validators.pattern('[A-Za-z0-9]*'), Validators.minLength(6), Validators.maxLength(14)]],
@@ -46,7 +46,7 @@ export class RegistrationComponent implements OnInit {
           toast: true,
           position: 'top',
           showConfirmButton: false,
-          timer: 3000,
+          timer: 2000,
           timerProgressBar: true,
         })
     
