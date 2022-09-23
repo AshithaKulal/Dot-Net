@@ -9,34 +9,49 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink=''>Home</a>
+            <a class="nav-link active" aria-current="page" routerLink=''><i class="fa fa-fw fa-home"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="products">Products</a>
+            <a class="nav-link" routerLink="offers" *ngIf="auth">Special Offers</a>
           </li>
+          
           <li class="nav-item">
-            <a class="nav-link" routerLink="#">Register</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="wishlist">Cart</a>
+            <a class="nav-link" routerLink="wishlist" *ngIf="auth">Cart</a>
           </li>  
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" *ngIf="auth">
               Trending Items
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown" *ngIf="auth">
               <li><a class="dropdown-item" routerLink="dress">Dresses</a></li>
               <li><a class="dropdown-item" routerLink="mobile">Mobile</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" routerLink="appliances">Home Appliances</a></li>
             </ul>
           </li> 
-          
+          <li class="nav-item">
+            <a class="nav-link" routerLink="products" *ngIf="auth">Product</a>
+          </li>   
         </ul>
-        <form class="d-flex">
+        
+
+        
+        <!-- <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        </form> -->
+      <form class="d-flex">
+        <button routerLink='cartitems' style="border:none;" *ngIf="auth">
+          <span class="fa fa-cart-plus" style="font-size:16px;color:red"><sup class="text-warning" style="font-size:10px;margin-left: 3px;color: blue;">{{cartCount}}</sup></span>
+        </button> &nbsp;&nbsp;&nbsp;
+        <a class="btn btn-warning" type="submit" style="border-radius:10px;color:black;" routerLink="login"
+          *ngIf="auth">Logout</a>
+        
+        <a class="nav-link" routerLink="login" *ngIf="!auth" style="color:whitesmoke">Login</a>
+        <a class="nav-link" routerLink="register" *ngIf="!auth"  style="color:whitesmoke">Register</a>
+        
+      </form>
+
       </div>
     </div>
   </nav>

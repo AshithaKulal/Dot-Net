@@ -1,0 +1,115 @@
+{
+  "posts": [
+    {
+      "id": 6,
+      "pname": "Gown",
+      "pdescription": "Royal Blue Designer Partywear Jacquard Gown",
+      "price": "2599",
+      "img": "https://cdn.shopify.com/s/files/1/0637/4834/1981/products/1631882429_1628250059_1_VIVA-34082-V125-PEACHMODE.jpg?v=1654139715"
+    },
+    {
+      "id": 7,
+      "pname": "Samsung",
+      "pdescription": "Octa-core Processor, 108MP High Resolution Camera",
+      "price": "21999",
+      "img": "https://images.samsung.com/is/image/samsung/p6pim/in/sm-m536bzgeinu/gallery/in-galaxy-m53-5g-sm-m536-sm-m536bzgeinu-532184026?$730_584_PNG$"
+    },
+    {
+      "id": 8,
+      "pname": "Mixer",
+      "pdescription": "Preethi Zion MG-227 Juicer Mixer Grinder",
+      "price": "6100",
+      "img": "https://rukminim1.flixcart.com/image/832/832/l4ln8nk0/mixer-grinder-juicer/q/q/j/-original-imagfggwknqjxsyx.jpeg?q=70"
+    },
+    {
+      "id": 9,
+      "pname": "Saree",
+      "pdescription": "The Silk Beige Beautiful Banarasi Jacquard Silk Saree",
+      "price": "4999",
+      "img": "https://cdn.shopify.com/s/files/1/0524/0238/9183/products/6b8d1913-4cc1-4251-acc6-2d34d84d6196_1_800x.jpg?v=1608785497"
+    },
+    {
+      "pname": "DinnerSet",
+      "pdescription": "Opalware Tropical Lagoon Dinner Set",
+      "price": "1899",
+      "img": "https://rukminim1.flixcart.com/image/612/612/xif0q/dinner-set/u/b/l/yes-22-lop-no-ds-rc-22-la-opala-original-imaghydvazjhsxyw.jpeg?q=70",
+      "id": 10
+    }
+  ],
+  "users": [
+    {
+      "username": "Admin",
+      "useremail": "admin@gmail.com",
+      "password": "admin@123",
+      "mobile": "9898989898",
+      "id": 3
+    },
+    {
+      "username": " Asmi",
+      "useremail": "asmi@gmail.com",
+      "password": "asmi123",
+      "mobile": " 9632814233",
+      "id": 6
+    },
+    {
+      "username": " Ashitha",
+      "useremail": "ashitha@gmail.com",
+      "password": "ashitha123",
+      "mobile": "9632814233",
+      "id": 7
+    },
+    {
+      "username": "Ashithakulal",
+      "useremail": "ashitha123@gmail.com",
+      "mobile": "9632814233",
+      "password": "asdf1234",
+      "id": 8
+    }
+  ],
+  "cart": [
+    {
+      "pname": "Oven Toaster",
+      "pdescription": "WONDERCHEF 60-Litre Oven Toaster Griller (OTG) - 60 Litres, Stainless Steel – With Rotisserie, Auto-Shut Off, Heat-Resistant Tempered Glass",
+      "price": 11499,
+      "img": "https://rukminim1.flixcart.com/image/832/832/kxdl3m80/otg-new/8/h/a/2000-steel-wonderchef-48-original-imag9un5ztegxzrf.jpeg?q=70",
+      "quantity": 1,
+      "id": 3
+    },
+    {
+      "pname": "Saree",
+      "pdescription": "The Silk Beige Beautiful Banarasi Jacquard Silk Saree with Rich Pallu",
+      "price": 3550,
+      "img": "https://cdn.shopify.com/s/files/1/0524/0238/9183/products/6b8d1913-4cc1-4251-acc6-2d34d84d6196_1_800x.jpg?v=1608785497",
+      "quantity": 1,
+      "id": 4
+    },
+    {
+      "pname": "Jeans",
+      "pdescription": "Straight cut jeans with a distressed finish for a stylish accent",
+      "price": 900,
+      "img": "https://image.uniqlo.com/UQ/ST3/in/imagesgoods/448428/sub/ingoods_448428_sub6.jpg?width=1600&impolicy=quality_75",
+      "quantity": 2,
+      "id": 5
+    },
+    {
+      "pname": "Saree",
+      "pdescription": "The Silk Beige Beautiful Banarasi Jacquard Silk Saree with Rich Pallu",
+      "price": 3550,
+      "img": "https://cdn.shopify.com/s/files/1/0524/0238/9183/products/6b8d1913-4cc1-4251-acc6-2d34d84d6196_1_800x.jpg?v=1608785497",
+      "quantity": 2,
+      "id": 6
+    },
+    {
+      "pname": "Telivision",
+      "pdescription": "SONY Bravia 163.9 cm (65 inch) Ultra HD (4K) LED Smart Google TV  (KD-65X80J)",
+      "price": 97900,
+      "img": "https://rukminim1.flixcart.com/image/832/832/kqqykcw0/television/1/f/n/kd-65x80j-sony-original-imag4p2wxahgfgmf.jpeg?q=70",
+      "quantity": 2,
+      "id": 7
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

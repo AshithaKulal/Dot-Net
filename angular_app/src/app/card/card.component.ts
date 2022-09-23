@@ -31,7 +31,7 @@ export class CardComponent implements OnInit {
   }
 
   onclick(){
-    this.router.navigate(['/products'])  
+    this.router.navigate(['/offers'])  
   }
 
   ngOnInit(): void {

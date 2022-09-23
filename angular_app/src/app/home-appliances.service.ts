@@ -26,7 +26,7 @@ export class HomeAppliancesService {
     },
     {
       pid: 3,
-      pname: 'Fans',
+      pname: 'Fan',
       pdescription: 'Atomberg Studio+ 1200 mm BLDC Motor with Remote 3 Blade Ceiling Fan  (earth brown, Pack of 1)',
       price: 5100,
       img: 'https://rukminim1.flixcart.com/image/832/832/ku79vgw0/fan/e/l/e/studio-ceiling-fan-atomberg-original-imag7dqqwzjjsrvf.jpeg?q=70'

@@ -7,7 +7,7 @@
                     <div class="col-lg-3">
                         
                         <img [src]="d.img">
-                        <app-counter></app-counter>
+                        <!-- <app-counter></app-counter> -->
                     </div>
                     <div class="col-lg-9" style="margin-top:20px;">
                         <!--Interpolation Binding-->
@@ -20,9 +20,9 @@
                             <span style="color:darkblue">Description: {{d.pdescription}}</span><br>
                            
                             
-                            <button class="btn btn-success" style="margin-top: 10px;margin-left: 100px;" >
-                               Buy Now
-                            </button>
+                           <input type="number" name="quantity" [(ngModel)]="quantity" style="width:50px;border-radius:10px;" min="1" max="25">
+                           
+                            <button class="btn btn-dark m-2" (click)="addToCart(d)" style="width:120px;border-radius:10px;">Add to Cart</button>
                            
               
                     </div>

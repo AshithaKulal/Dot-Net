@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
@@ -21,8 +20,12 @@ import { CounterchildComponent } from './counter/counterchild/counterchild.compo
 import { AppliancesComponent } from './appliances/appliances.component';
 import { ContactComponent } from './contact/contact.component';
 import { SuggestionComponent } from './suggestion/suggestion.component';
-
-
+import { RegistrationComponent } from './registration/registration.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ModifyProductComponent } from './modify-product/modify-product.component';
+import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import { CartItemsComponent } from './cart-items/cart-items.component';
 
 @NgModule({
   declarations: [
@@ -44,12 +47,18 @@ import { SuggestionComponent } from './suggestion/suggestion.component';
     AppliancesComponent,
     ContactComponent,
     SuggestionComponent,
+    RegistrationComponent,
+    ModifyProductComponent,
+    LoginComponent,
+    CartItemsComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
