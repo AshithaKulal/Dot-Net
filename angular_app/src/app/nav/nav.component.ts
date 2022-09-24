@@ -12,6 +12,7 @@ export class NavComponent implements OnInit {
   constructor( private authService:UserService,private cartSvc:CartService) { }
 
   auth:boolean=false;
+  admin:boolean=false;
   cartCount: number=0;
 
   title="Flipkart"
@@ -26,6 +27,15 @@ export class NavComponent implements OnInit {
         this.auth = data;
       }
     );
+
+    this.authService.adminSubject.subscribe(
+      adminauth => 
+      {
+        console.log('auth inside nav component: ' + adminauth);
+        this.admin = adminauth;
+      }
+    );
+
     //Cart count
     this.cartSvc.getCartItems().subscribe (     
       (response) =>

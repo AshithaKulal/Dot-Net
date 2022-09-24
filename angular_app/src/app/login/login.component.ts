@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { error } from '@angular/compiler/src/util';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment';
@@ -36,6 +35,26 @@ get f() { return this.loginForm.controls; }
     if (this.loginForm.invalid) {
       return ;
     }
+    if("admin@gmail.com"=== this.loginForm.value.useremail && "admin123"=== this.loginForm.value.password)
+    {
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top',
+        showConfirmButton: false,
+        timer: 2000,
+        timerProgressBar: true,
+      })
+  
+      Toast.fire({
+        icon: 'success',
+        title: 'welcome admin'
+      })
+      this.loginForm.reset();
+      this.router.navigate([''])
+      this.userService.validateAdmin(true);
+    }
+     
+    else{
     this.http.get<any>(this.userapi)
     .subscribe(res=>{
       const user=res.find((a:any)=>{
@@ -46,7 +65,7 @@ get f() { return this.loginForm.controls; }
           toast: true,
           position: 'top',
           showConfirmButton: false,
-          timer: 3000,
+          timer: 2000,
           timerProgressBar: true,
         })
     
@@ -57,12 +76,13 @@ get f() { return this.loginForm.controls; }
         this.loginForm.reset();
         this.router.navigate([''])
         this.userService.validateAuth(true);
-      }else{
+      }
+      else{
         const Toast = Swal.mixin({
           toast: true,
           position: 'top',
           showConfirmButton: false,
-          timer: 3000,
+          timer: 2000,
           timerProgressBar: true,
         })
     
@@ -74,5 +94,6 @@ get f() { return this.loginForm.controls; }
       }
     })
   }
+}
 
 }

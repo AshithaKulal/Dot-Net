@@ -39,7 +39,7 @@
             <a class="nav-link" routerLink="appliances" *ngIf="auth">Home Appliances</a>
           </li> 
           <li class="nav-item">
-            <a class="nav-link" routerLink="products" *ngIf="auth">products</a>
+            <a class="nav-link" routerLink="products" *ngIf="admin">Modify products</a>
           </li>   
         </ul>
         
@@ -54,10 +54,10 @@
           <span class="fa fa-cart-plus" style="font-size:16px;color:red"><sup class="text-warning" style="font-size:10px;margin-left: 3px;color: blue;">{{cartCount}}</sup></span>
         </button> &nbsp;&nbsp;&nbsp;
         <a class="btn btn-warning" type="submit" style="border-radius:10px;color:black;" routerLink="login"
-          *ngIf="auth">Logout</a>
+          *ngIf="auth || admin">Logout</a>
         
-        <a class="nav-link" routerLink="login" *ngIf="!auth" style="color:whitesmoke">Login</a>
-        <a class="nav-link" routerLink="register" *ngIf="!auth"  style="color:whitesmoke">Register</a>
+        <a class="nav-link" routerLink="login" *ngIf="!auth && !admin" style="color:whitesmoke">Login</a>
+        <a class="nav-link" routerLink="register" *ngIf="!auth && !admin"  style="color:whitesmoke">Register</a>
         
       </form>
 
