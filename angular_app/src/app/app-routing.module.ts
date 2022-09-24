@@ -10,7 +10,9 @@ import { RegistrationComponent } from './registration/registration.component';
 import { ModifyProductComponent } from './modify-product/modify-product.component';
 import { LoginComponent } from './login/login.component';
 import { CartItemsComponent } from './cart-items/cart-items.component';
-
+import { FeedbackComponent } from './feedback/feedback.component';
+import { DisplayfeedbackComponent } from './displayfeedback/displayfeedback.component';
+ 
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'offers',component:ProductsComponent},
@@ -21,7 +23,9 @@ const routes: Routes = [
   {path: 'register', component:RegistrationComponent},
   {path: 'products', component:ModifyProductComponent},
   {path: 'login', component:LoginComponent},
-  {path: 'cartitems', component:CartItemsComponent}
+  {path: 'cartitems', component:CartItemsComponent},
+  {path: 'feedback', component:FeedbackComponent},
+  {path: 'viewfeedback', component:DisplayfeedbackComponent}
 
 ];
 

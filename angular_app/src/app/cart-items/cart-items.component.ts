@@ -11,9 +11,8 @@ import Swal from 'sweetalert2';
   styleUrls: ['./cart-items.component.css']
 })
 export class CartItemsComponent implements OnInit {
-
   constructor(private cartSvc: CartService, private router:Router) { }
-  //Cart List
+  //Cart List 
   carts:Cartitem={
     pid:0,
     pname:'',

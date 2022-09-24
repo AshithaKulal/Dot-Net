@@ -26,6 +26,7 @@ import { ModifyProductComponent } from './modify-product/modify-product.componen
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { CartItemsComponent } from './cart-items/cart-items.component';
+import { DisplayfeedbackComponent } from './displayfeedback/displayfeedback.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { CartItemsComponent } from './cart-items/cart-items.component';
     ModifyProductComponent,
     LoginComponent,
     CartItemsComponent,
+    DisplayfeedbackComponent,
 
   ],
   imports: [
