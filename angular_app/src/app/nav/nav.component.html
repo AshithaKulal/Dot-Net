@@ -15,10 +15,10 @@
             <a class="nav-link" routerLink="offers" *ngIf="auth">Special Offers</a>
           </li>
           
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" routerLink="wishlist" *ngIf="auth">Cart</a>
-          </li>  
-          <li class="nav-item dropdown">
+          </li>   -->
+          <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" *ngIf="auth">
               Trending Items
             </a>
@@ -28,9 +28,18 @@
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" routerLink="appliances">Home Appliances</a></li>
             </ul>
+          </li>  -->
+          <li class="nav-item">
+            <a class="nav-link" routerLink="dress" *ngIf="auth">Dresses</a>
           </li> 
           <li class="nav-item">
-            <a class="nav-link" routerLink="products" *ngIf="auth">Product</a>
+            <a class="nav-link" routerLink="mobile" *ngIf="auth">Mobile</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" routerLink="appliances" *ngIf="auth">Home Appliances</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" routerLink="products" *ngIf="auth">products</a>
           </li>   
         </ul>
         

@@ -13,6 +13,7 @@ import Swal from 'sweetalert2';
 export class RegistrationComponent implements OnInit {  
 
   userurl = environment.userapi;
+  
   registerForm = new FormGroup({
     username: new FormControl(''),
     useremail: new FormControl(''),
